@@ -1,7 +1,9 @@
 package com.son.admin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -38,8 +40,25 @@ class MainActivity : AppCompatActivity() {
                 "uses" to uses
             )
             db.collection("product").add(product).addOnCompleteListener {
+                Toast.makeText(this, "success", Toast.LENGTH_LONG).show()
+            }.addOnFailureListener {
+                Toast.makeText(this, "fail" + it.toString(), Toast.LENGTH_LONG).show()
 
             }
+        }
+        btnClearText.setOnClickListener {
+            nameMedicine.setText("")
+            ulrImage.setText("")
+            usesMedicin.setText("")
+            ingredientMedicin.setText("")
+            using.setText("")
+            sideEffects.setText("")
+            licenseNumber.setText("")
+            numberLikeMedicin.setText("")
+            origin.setText("")
+        }
+        btnAddVideoShow.setOnClickListener {
+            startActivity(Intent(this, AddVideoShow::class.java))
         }
     }
 }
