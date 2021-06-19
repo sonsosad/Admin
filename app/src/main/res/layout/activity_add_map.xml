@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="tên phòng khám"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="thành phố"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="địa chỉ"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="Latitude"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edtLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="Longitude"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="số điện thoại"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtImage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="Link ảnh mô tả"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edtType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:hint="Loại"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSummit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="summit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Clear Text" />
+    </LinearLayout>
+
+
+</ScrollView>

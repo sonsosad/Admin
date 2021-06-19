@@ -19,5 +19,9 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
 
         }
+        btnCompany.setOnClickListener {
+            startActivity(Intent(this, AddMap::class.java))
+
+        }
     }
 }
