@@ -23,5 +23,9 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this, AddMap::class.java))
 
         }
+        btnNews.setOnClickListener {
+            startActivity(Intent(this, AddHealthNew::class.java))
+
+        }
     }
 }

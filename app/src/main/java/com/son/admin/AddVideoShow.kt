@@ -13,7 +13,7 @@ class AddVideoShow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_video_show)
-        FirebaseApp.initializeApp(this);
+        FirebaseApp.initializeApp(this)
         val db = Firebase.firestore
         btnClearText.setOnClickListener {
             edtTitle.setText("")
