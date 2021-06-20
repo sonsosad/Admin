@@ -17,7 +17,6 @@ class AddMap : AppCompatActivity() {
         val db = Firebase.firestore
         btnClearText.setOnClickListener {
             edtName.setText("")
-            edtCity.setText("")
             edtAddress.setText("")
             edtLatitude.setText("")
             edtLongitude.setText("")
@@ -30,7 +29,7 @@ class AddMap : AppCompatActivity() {
             val city = edtCity.text.toString()
             val address = edtAddress.text.toString()
             val latitude = edtLatitude.text.toString()
-            val longitude = edtLatitude.text.toString()
+            val longitude = edtLongitude.text.toString()
             val phoneNumber = edtPhoneNumber.text.toString()
             val imageLink = edtImage.text.toString()
             val type = edtType.text.toString()
