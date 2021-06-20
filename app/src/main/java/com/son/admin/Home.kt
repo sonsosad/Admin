@@ -19,5 +19,9 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
 
         }
+        btnNews.setOnClickListener {
+            startActivity(Intent(this, AddHealthNew::class.java))
+
+        }
     }
 }
